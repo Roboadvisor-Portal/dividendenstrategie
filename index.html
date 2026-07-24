@@ -17,15 +17,21 @@
 <meta property="og:title" content="Dividendenstrategie: Mit Aktien passives Einkommen aufbauen 2026">
 <meta property="og:description" content="Wie Anleger mit Dividendenaktien systematisch passives Einkommen aufbauen — Kennzahlen, Strategien, Fehler und Top-Aktien erklärt.">
 <meta property="og:url" content="https://dividendenstrategie.vercel.app/">
+<meta property="og:image" content="https://dividendenstrategie.vercel.app/dividendenstrategie-rechenbeispiel.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="680">
+<meta property="og:image:alt" content="Monatliche Dividende nach 10, 20 und 30 Jahren bei 300 Euro Sparplan und reinvestierten Dividenden">
 <meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Investors Magazine">
 <meta property="article:published_time" content="2026-06-25T08:00:00+02:00">
-<meta property="article:modified_time" content="2026-06-25T08:00:00+02:00">
+<meta property="article:modified_time" content="2026-07-24T09:00:00+02:00">
 <meta property="article:section" content="Aktien & Dividenden">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Dividendenstrategie: Mit Aktien passives Einkommen aufbauen">
 <meta name="twitter:description" content="Dividendenaktien, Kennzahlen, Strategien und häufige Fehler — der umfassende Guide für Dividendeninvestoren.">
+<meta name="twitter:image" content="https://dividendenstrategie.vercel.app/dividendenstrategie-rechenbeispiel.png">
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
@@ -36,8 +42,9 @@
       "@type": "Article",
       "headline": "Dividendenstrategie: Mit Aktien passives Einkommen aufbauen 2026",
       "description": "Wie Anleger mit Dividendenaktien systematisch passives Einkommen aufbauen — Kennzahlen, Strategien, Fehler und Beispiele.",
+      "image": "https://dividendenstrategie.vercel.app/dividendenstrategie-rechenbeispiel.png",
       "datePublished": "2026-06-25T08:00:00+02:00",
-      "dateModified": "2026-06-25T08:00:00+02:00",
+      "dateModified": "2026-07-24T09:00:00+02:00",
       "inLanguage": "de-DE",
       "author": {
         "@type": "Organization",
@@ -97,6 +104,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Die Dividendenrendite zeigt die aktuelle Ausschüttungsquote bezogen auf den Kurs. Das Dividendenwachstum beschreibt, wie stark die Dividende jährlich gesteigert wird. Aktien mit niedrigerer Rendite aber starkem Wachstum können langfristig attraktiver sein."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sind Dividenden-ETFs eine Alternative zu Einzelaktien?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Dividenden-ETFs bilden einen Index dividendenstarker Unternehmen ab und bieten breite Diversifikation ohne Einzeltitelauswahl. Sie eignen sich besonders für Einsteiger, verzichten dafür auf die Möglichkeit, gezielt einzelne Qualitätsunternehmen überzugewichten."
           }
         }
       ]
@@ -162,7 +177,6 @@ body {
   line-height: 1.75;
 }
 
-/* ── HEADER BAR ── */
 .sitebar {
   background: var(--green-deep);
   padding: 0.5rem 1.5rem;
@@ -186,7 +200,6 @@ body {
   letter-spacing: 0.06em;
 }
 
-/* ── HERO ── */
 .hero {
   background: var(--green-deep);
   padding: 4rem 1.5rem 5rem;
@@ -272,10 +285,8 @@ body {
 .hero-meta-item { color: #6a8a72; }
 .hero-meta-item strong { color: #a8c4b0; font-weight: 600; }
 
-/* ── BODY ── */
 .page { max-width: var(--max); margin: 0 auto; padding: 2.5rem 1.5rem 5rem; }
 
-/* ── OPENING QUOTE ── */
 .opening {
   border-left: 3px solid var(--gold);
   padding: 1.25rem 1.5rem;
@@ -298,7 +309,6 @@ body {
   margin-top: 0.5rem;
 }
 
-/* ── SECTION HEADS ── */
 .section-label {
   font-family: var(--sans);
   font-size: 0.68rem;
@@ -327,7 +337,6 @@ h3.subtitle {
   margin: 1.5rem 0 0.5rem;
 }
 
-/* ── PROSE ── */
 .prose p {
   font-size: 1rem;
   color: var(--ink-mid);
@@ -337,7 +346,6 @@ h3.subtitle {
 .prose p:last-child { margin-bottom: 0; }
 .prose strong { color: var(--ink); font-weight: 700; }
 
-/* ── KPI STRIP ── */
 .kpi-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -369,7 +377,6 @@ h3.subtitle {
   line-height: 1.4;
 }
 
-/* ── KENNZAHLEN GRID ── */
 .kennzahl-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -421,7 +428,6 @@ h3.subtitle {
 .bench-good { background: var(--green-light); color: var(--green-mid); }
 .bench-warn { background: var(--gold-light); color: var(--gold); }
 
-/* ── STRATEGIE VERGLEICH ── */
 .strategie-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -474,7 +480,32 @@ h3.subtitle {
 .strategie-list li:last-child { border-bottom: none; }
 .strategie-list li::before { content: '→'; color: var(--green-accent); flex-shrink: 0; }
 
-/* ── ARISTOKRATEN TABELLE ── */
+.persona-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+.persona-card {
+  background: var(--white);
+  border: 1px solid var(--cream-border);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+}
+.persona-title {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--green-deep);
+  margin-bottom: 0.4rem;
+}
+.persona-card p {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+
 .table-wrap { overflow-x: auto; margin: 1rem 0; }
 .data-table {
   width: 100%;
@@ -518,7 +549,6 @@ h3.subtitle {
   white-space: nowrap;
 }
 
-/* ── RECHENBEISPIEL ── */
 .calc-box {
   background: var(--green-deep);
   color: #c8dcc8;
@@ -579,7 +609,10 @@ h3.subtitle {
   line-height: 1.6;
 }
 
-/* ── FEHLER LISTE ── */
+figure.article-figure { margin: 1.5rem 0; }
+figure.article-figure img { width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--cream-border); display: block; }
+figure.article-figure figcaption { font-family: var(--sans); font-size: 0.78rem; color: var(--ink-muted); margin-top: 0.6rem; text-align: center; }
+
 .fehler-list { list-style: none; margin: 1rem 0; }
 .fehler-item {
   display: grid;
@@ -620,7 +653,6 @@ h3.subtitle {
   line-height: 1.6;
 }
 
-/* ── STEUER BOX ── */
 .steuer-box {
   background: var(--gold-light);
   border: 1px solid var(--gold-border);
@@ -666,7 +698,6 @@ h3.subtitle {
   line-height: 1.6;
 }
 
-/* ── CHECKLISTE ── */
 .checklist {
   list-style: none;
   background: var(--white);
@@ -695,7 +726,6 @@ h3.subtitle {
   margin-top: 1px;
 }
 
-/* ── FAQ ── */
 .faq-item {
   border-bottom: 1px solid var(--cream-border);
   padding: 1.1rem 0;
@@ -716,7 +746,6 @@ h3.subtitle {
   line-height: 1.7;
 }
 
-/* ── CROSS-LINKS ── */
 .crosslinks {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -751,7 +780,6 @@ h3.subtitle {
   line-height: 1.35;
 }
 
-/* ── AUTHOR ── */
 .author-box {
   background: var(--white);
   border: 1px solid var(--cream-border);
@@ -790,23 +818,13 @@ h3.subtitle {
   line-height: 1.65;
   margin-bottom: 0.6rem;
 }
-.author-link {
-  font-family: var(--sans);
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--green-accent);
-  text-decoration: none;
-}
-.author-link:hover { text-decoration: underline; }
 
-/* ── DIVIDER ── */
 .rule {
   border: none;
   border-top: 1px solid var(--cream-border);
   margin: 2.5rem 0;
 }
 
-/* ── FOOTER ── */
 footer {
   background: var(--green-deep);
   color: #4a6a52;
@@ -816,12 +834,12 @@ footer {
   font-size: 0.72rem;
   border-top: 2px solid var(--gold);
 }
-footer a { color: #6a8a72; text-decoration: none; }
 
 @media (max-width: 600px) {
   .kpi-strip { grid-template-columns: 1fr 1fr; }
   .kennzahl-grid { grid-template-columns: 1fr; }
   .strategie-grid { grid-template-columns: 1fr; }
+  .persona-grid { grid-template-columns: 1fr; }
   .calc-scenario { grid-template-columns: 1fr; }
   .steuer-grid { grid-template-columns: 1fr; }
   .crosslinks { grid-template-columns: 1fr; }
@@ -844,8 +862,8 @@ footer a { color: #6a8a72; text-decoration: none; }
     <p class="hero-intro">Wer systematisch in Dividendenaktien investiert, baut einen Einkommensstrom auf, der unabhängig von Kursschwankungen fließt. Wie das funktioniert — und worauf es wirklich ankommt.</p>
     <div class="hero-meta">
       <span class="hero-meta-item"><strong>Thema:</strong> Dividendenstrategie & passives Einkommen</span>
-      <span class="hero-meta-item"><strong>Lesezeit:</strong> ca. 9 Min.</span>
-      <span class="hero-meta-item"><strong>Stand:</strong> Juni 2026</span>
+      <span class="hero-meta-item"><strong>Lesezeit:</strong> ca. 12 Min.</span>
+      <span class="hero-meta-item"><strong>Stand:</strong> Juli 2026</span>
     </div>
   </div>
 </header>
@@ -857,7 +875,6 @@ footer a { color: #6a8a72; text-decoration: none; }
     <cite>— Warren Buffett</cite>
   </blockquote>
 
-  <!-- KPI Strip -->
   <div class="kpi-strip">
     <div class="kpi-cell">
       <span class="kpi-val">3–5 %</span>
@@ -877,18 +894,17 @@ footer a { color: #6a8a72; text-decoration: none; }
     </div>
   </div>
 
-  <!-- Was ist Dividendenstrategie -->
   <div class="section-label">Grundlagen</div>
   <h2 class="title">Was ist eine Dividendenstrategie?</h2>
   <div class="prose">
     <p>Eine Dividendenstrategie ist ein Anlageansatz, bei dem Investoren gezielt Aktien von Unternehmen kaufen, die regelmäßig und verlässlich Gewinnanteile an ihre Aktionäre ausschütten. Das Ziel ist nicht primär der schnelle Kursgewinn — sondern der Aufbau eines stabilen, wachsenden Einkommensstroms, der quartalsweise oder jährlich auf das Konto fließt.</p>
     <p>Anders als beim Wachstumsinvestieren, das auf Kursgewinne durch Unternehmensexpansion setzt, steht bei der Dividendenstrategie der <strong>laufende Cashflow</strong> im Mittelpunkt. Langfristig erzielen dividendenstarke Unternehmen oft eine bemerkenswert attraktive Gesamtrendite — aus der Kombination von Dividendenzahlungen und moderatem Kurswachstum.</p>
     <p>Historische Analysen des US-Aktienmarkts zeigen, dass Dividenden über lange Zeiträume für einen erheblichen Teil der Gesamtrendite des S&P 500 verantwortlich waren. Wer die Ausschüttungen konsequent reinvestiert, profitiert zusätzlich vom <strong>Zinseszinseffekt</strong> — die reinvestierten Dividenden kaufen neue Anteile, die wiederum Dividenden zahlen.</p>
+    <p>Die Idee ist dabei keineswegs neu: Schon Generationen von Anlegern vor der ETF-Ära setzten auf solide Dividendenzahler als Kern ihres Portfolios, lange bevor Begriffe wie „Dividendenaristokrat" oder „DRIP" geprägt wurden. Was sich verändert hat, ist der Zugang — Bruchstückkäufe, kostenlose Reinvestitionspläne bei vielen Brokern und breite internationale Diversifikation machen die Strategie heute auch mit kleinen monatlichen Beträgen umsetzbar, nicht nur für vermögende Anleger mit großen Depots.</p>
   </div>
 
   <hr class="rule">
 
-  <!-- Kennzahlen -->
   <div class="section-label">Kennzahlen</div>
   <h2 class="title">Die wichtigsten Kennzahlen für Dividendeninvestoren</h2>
   <div class="prose">
@@ -935,7 +951,6 @@ footer a { color: #6a8a72; text-decoration: none; }
 
   <hr class="rule">
 
-  <!-- Drei Strategien -->
   <div class="section-label">Anlagestrategien</div>
   <h2 class="title">Drei Ansätze der Dividendenstrategie</h2>
   <div class="prose">
@@ -989,9 +1004,36 @@ footer a { color: #6a8a72; text-decoration: none; }
     <p><strong>Yield on Cost (YOC):</strong> Ein wichtiges Konzept der Dividend-Growth-Strategie. Wer eine Aktie für 50 Euro kauft, die 1,50 Euro Dividende zahlt (3 % Rendite), und das Unternehmen steigert die Dividende jährlich um 8 %, zahlt nach 15 Jahren bereits 4,76 Euro — bezogen auf den ursprünglichen Kaufkurs sind das 9,5 % Rendite, obwohl der aktuelle Kurs längst gestiegen ist.</p>
   </div>
 
+  <h3 class="subtitle">Welcher Ansatz passt zu wem?</h3>
+  <div class="persona-grid">
+    <div class="persona-card">
+      <div class="persona-title">Kurz vor oder in der Rentenphase</div>
+      <p>Sofortiger, möglichst hoher Cashflow steht im Vordergrund — die High-Yield-Strategie liefert diesen unmittelbar, auch wenn das Kurswachstum begrenzter ausfällt.</p>
+    </div>
+    <div class="persona-card">
+      <div class="persona-title">Lange Ansparphase vor sich</div>
+      <p>Wer 15 Jahre oder mehr Zeit hat, profitiert stärker vom Dividendenwachstum als von der Anfangsrendite — die Dividend-Growth-Strategie zahlt sich über die Yield-on-Cost-Wirkung erst langfristig richtig aus.</p>
+    </div>
+    <div class="persona-card">
+      <div class="persona-title">Unsicher, welcher Ansatz passt</div>
+      <p>Die Blend-Strategie verbindet beide Ansätze und reduziert damit auch die Abhängigkeit von einer einzigen Marktphase oder Sektor-Rotation.</p>
+    </div>
+  </div>
+
   <hr class="rule">
 
-  <!-- Aristokraten -->
+  <div class="section-label">Dividenden-ETFs</div>
+  <h2 class="title">Dividenden-ETFs als Alternative zur Einzelaktienauswahl</h2>
+  <div class="prose">
+    <p>Nicht jeder Anleger möchte einzelne Kennzahlen prüfen, Geschäftsberichte lesen und ein Portfolio aus Einzeltiteln zusammenstellen. Für alle, die die Grundidee der Dividendenstrategie schätzen, aber auf die Einzeltitelauswahl verzichten wollen, bieten Dividenden-ETFs einen unkomplizierten Zugang.</p>
+    <p>Ein Dividenden-ETF bildet einen Index ab, der nach klar definierten Kriterien zusammengestellt wird — etwa Mindestdividendenrendite, Mindestanzahl an Jahren ohne Kürzung oder eine maximale Ausschüttungsquote. Der ETF kauft automatisch alle im Index enthaltenen Aktien in der entsprechenden Gewichtung, ohne dass der Anleger selbst Einzeltitel bewerten muss.</p>
+    <h3 class="subtitle">Vor- und Nachteile gegenüber Einzelaktien</h3>
+    <p>Der große Vorteil liegt in der breiten Diversifikation: Ein einzelner Dividenden-ETF kann hundert oder mehr Unternehmen aus verschiedenen Branchen und Ländern bündeln, wodurch das Risiko eines einzelnen Dividendenkürzers kaum ins Gewicht fällt. Der Nachteil: Der ETF folgt starr seiner Indexmethodik und kann keine gezielte Übergewichtung besonders überzeugender Einzelunternehmen vornehmen — wer von der Qualität eines bestimmten Dividendenaristokraten überdurchschnittlich stark profitieren möchte, ist mit Einzelaktien besser bedient.</p>
+    <p>In der Praxis kombinieren viele Anleger beide Ansätze: einen breiten Dividenden-ETF als stabilen Kern des Portfolios, ergänzt um einzelne, besonders überzeugende Dividendenaristokraten als Satelliten-Positionen.</p>
+  </div>
+
+  <hr class="rule">
+
   <div class="section-label">Dividendenaristokraten</div>
   <h2 class="title">Ausgewählte Dividendenaristokraten im Überblick</h2>
   <div class="prose">
@@ -1065,7 +1107,6 @@ footer a { color: #6a8a72; text-decoration: none; }
 
   <hr class="rule">
 
-  <!-- Rechenbeispiel -->
   <div class="section-label">Rechenbeispiel</div>
   <h2 class="title">Was aus einem Dividendenportfolio werden kann</h2>
   <div class="prose">
@@ -1099,9 +1140,16 @@ footer a { color: #6a8a72; text-decoration: none; }
     <div class="calc-note">Modellrechnung ohne Garantie. Tatsächliche Renditen hängen von Marktentwicklung, Ausschüttungsquoten und Reinvestitionsverhalten ab. Steuern auf Dividenden (Abgeltungssteuer 25 % + Soli) reduzieren die effektive Rendite — besonders in der Ansparphase empfiehlt sich die Nutzung des Freistellungsauftrags.</div>
   </div>
 
+  <figure class="article-figure">
+    <img src="/dividendenstrategie-rechenbeispiel.png"
+         alt="Monatliche Dividende nach 10, 20 und 30 Jahren bei 300 Euro Sparplan und reinvestierten Dividenden"
+         title="Dividendenstrategie: Monatliche Dividende im Zeitverlauf"
+         width="1200" height="680" loading="lazy" decoding="async">
+    <figcaption>Modellrechnung: monatliche Dividendenauszahlung nach 10, 20 und 30 Jahren bei 300 €/Monat Sparrate, 3,5 % Startrendite und 6 % jährlichem Dividendenwachstum.</figcaption>
+  </figure>
+
   <hr class="rule">
 
-  <!-- Steuer -->
   <div class="section-label">Steuer</div>
   <h2 class="title">Dividenden und Steuern in Deutschland</h2>
   <div class="prose">
@@ -1134,7 +1182,6 @@ footer a { color: #6a8a72; text-decoration: none; }
 
   <hr class="rule">
 
-  <!-- Häufige Fehler -->
   <div class="section-label">Häufige Fehler</div>
   <h2 class="title">7 Fehler, die Dividendeninvestoren vermeiden sollten</h2>
   <ul class="fehler-list">
@@ -1191,7 +1238,6 @@ footer a { color: #6a8a72; text-decoration: none; }
 
   <hr class="rule">
 
-  <!-- Checkliste -->
   <div class="section-label">Checkliste</div>
   <h2 class="title">Checkliste: Dividendenaktie analysieren</h2>
   <ul class="checklist">
@@ -1209,7 +1255,6 @@ footer a { color: #6a8a72; text-decoration: none; }
 
   <hr class="rule">
 
-  <!-- FAQ -->
   <div class="section-label">Häufige Fragen</div>
   <h2 class="title">FAQ zur Dividendenstrategie</h2>
   <div class="faq-item">
@@ -1236,36 +1281,37 @@ footer a { color: #6a8a72; text-decoration: none; }
     <div class="faq-q">Was ist DRIP?</div>
     <div class="faq-a">DRIP steht für Dividend Reinvestment Plan — ein automatischer Plan, bei dem ausgezahlte Dividenden sofort in neue Aktienanteile reinvestiert werden. Das maximiert den Zinseszinseffekt und beschleunigt den Vermögensaufbau erheblich.</div>
   </div>
+  <div class="faq-item">
+    <div class="faq-q">Sind Dividenden-ETFs eine Alternative zu Einzelaktien?</div>
+    <div class="faq-a">Ja. Dividenden-ETFs bilden einen Index dividendenstarker Unternehmen ab und bieten breite Diversifikation ohne Einzeltitelauswahl. Sie eignen sich besonders für Einsteiger, verzichten dafür auf die Möglichkeit, gezielt einzelne Qualitätsunternehmen überzugewichten.</div>
+  </div>
 
   <hr class="rule">
 
-  <!-- Cross-Links -->
   <div class="section-label">Weiterführende Artikel</div>
   <div class="crosslinks">
-    <a href="https://lucent-piroshki-10e96e.netlify.app/dividende-aktien" class="crosslink" rel="dofollow">
+    <a href="https://lucent-piroshki-10e96e.netlify.app/dividende-aktien" class="crosslink" rel="noopener">
       <div class="crosslink-cat">Dividenden · Grundlagen</div>
       <div class="crosslink-title">Dividendenaktien: Grundlagen für den erfolgreichen Einstieg</div>
     </a>
-    <a href="https://investment-guides-aey.pages.dev/diversifikation-rendite" class="crosslink" rel="dofollow">
+    <a href="https://investment-guides-aey.pages.dev/diversifikation-rendite" class="crosslink" rel="noopener">
       <div class="crosslink-cat">Portfolio · Strategie</div>
       <div class="crosslink-title">Diversifikation & Rendite: Das Fundament jeder Anlagestrategie</div>
     </a>
   </div>
 
-  <!-- Author -->
   <div class="author-box">
     <div class="author-monogram">IM</div>
     <div>
       <div class="author-name">Investors Magazine Redaktion</div>
       <p class="author-desc">Investors Magazine ist ein unabhängiges Finanzmagazin für private Anleger im deutschsprachigen Raum. Wir analysieren Aktien, Dividendenstrategien und Anlagetrends — ohne Produktwerbung, ohne Interessenkonflikte.</p>
-      <a href="https://investors-magazine.yolasite.com/" class="author-link" rel="dofollow" target="_blank">→ investors-magazine.yolasite.com</a>
     </div>
   </div>
 
 </main>
 
 <footer>
-  <p>&copy; 2026 Investors Magazine · <a href="https://investors-magazine.yolasite.com/" rel="dofollow">investors-magazine.yolasite.com</a> · Alle Angaben ohne Gewähr · Keine Anlageberatung</p>
+  <p>&copy; 2026 Investors Magazine · Alle Angaben ohne Gewähr · Keine Anlageberatung</p>
 </footer>
 
 </body>
